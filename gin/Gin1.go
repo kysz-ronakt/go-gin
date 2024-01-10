@@ -4,6 +4,7 @@ import (
 	"awesomeProject/logs"
 	"awesomeProject/middleware"
 	"github.com/gin-gonic/gin"
+	"github.com/sirupsen/logrus"
 )
 
 func main() {
@@ -11,6 +12,7 @@ func main() {
 	//creates gin router with default middleware and logger , we can also do that explicitly
 	router := gin.Default()
 
+	logrus.Println("logrus printing.......")
 	//router := gin.New()
 
 	gin.ForceConsoleColor()
